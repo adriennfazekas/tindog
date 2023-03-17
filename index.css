@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5em;    
+    padding-top: 0.5em;
+}
+
+.header-container img {
+    margin: 0.5em;
+}
+.profile-field img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 0.5em;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    gap: 25px;
+}
+button {
+    background-color: white;
+    border-radius: 50%;  
+    border: none;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+button img {
+    margin: 1em;
+    width: 26px;
+    height: 26px;
+}
