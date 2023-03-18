@@ -6,26 +6,49 @@ body {
     padding: 0;
 }
 .container {
+    position: relative;
     max-width: 500px;
     margin: auto;
 }
 
+/* HEADER */
 .header-container {
     display: flex;
     justify-content: space-between;
     height: 3.5em;    
     padding-top: 0.5em;
 }
-
 .header-container img {
     margin: 0.5em;
 }
-.profile-field img {
+
+/* DOG-ITEM */
+.dog-picture {
+    display: block;
     width: 100%;
-    height: auto;
     border-radius: 20px;
     padding: 0.5em;
 }
+.profile-data {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 1.5rem;
+    color: #F8F8F8;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.profile-bio {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    color: #B7B7B7;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* BUTTONS */
 .buttons {
     display: flex;
     justify-content: center;
@@ -42,4 +65,24 @@ button img {
     margin: 1em;
     width: 26px;
     height: 26px;
+}
+.like-btn:hover {
+    background-color: #DBFFF4;
+}
+.reject-btn:hover {
+    background-color :#FFE7EF;
+}
+
+/* MODAL */
+.modal {
+    display: block;    
+    position: absolute;
+    left: 20;
+    top: 60;
+    margin: auto;
+}
+.modal img {
+    width: 50%;
+    height: auto;
+    transform: rotate(330deg);
 }
