@@ -1,4 +1,4 @@
-class Dogs {
+class Dog {
     constructor(data) {
         Object.assign(this, data)
     }
@@ -6,9 +6,11 @@ class Dogs {
         const { name, age, avatar, bio} = this
         return ` 
                 <img class="dog-picture" src=${avatar}>
-                <div class="profile-data">${name}, ${age}</div>
-                <div class="profile-bio">${bio}</div>
+                <div class="text-box">
+                    <h2 class="profile-data">${name}, ${age}</h2>
+                    <h3 class="profile-bio">${bio}</h3>
+                </div>
             `
     }
 }
-export default Dogs
+export default Dog

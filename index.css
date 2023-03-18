@@ -24,24 +24,23 @@ body {
 
 /* DOG-ITEM */
 .dog-picture {
-    display: block;
     width: 100%;
     border-radius: 20px;
     padding: 0.5em;
 }
-.profile-data {
+.text-box {
     position: absolute;
-    bottom: 3.5rem;
-    left: 1.5rem;
+    bottom: 5em;
+    left: 2em;
+}
+.profile-data {
     color: #F8F8F8;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.5rem;
+    line-height: 0.2em;
 }
 .profile-bio {
-    position: absolute;
-    bottom: 1rem;
-    left: 1.5rem;
     color: #B7B7B7;
     font-family: 'Poppins';
     font-weight: 400;

@@ -1,8 +1,8 @@
 import { dogs } from "./data.js";
 import { randomNumber } from "./utils.js";
-import Dogs from "./dogs.js";
+import Dog from "./dogs.js";
 
-let dog = new Dogs(dogs[randomNumber()])
+let dog = new Dog(dogs[randomNumber()])
 const likeBtn = document.getElementById("like-btn")
 const rejectBtn = document.getElementById("reject-btn")
 
@@ -24,11 +24,11 @@ function targetButton(buttonMode) {
     document.getElementById("modal").innerHTML = `
         <img src="images/${buttonMode}-image.png">
     `
-    
+
     setTimeout( () => {
-        dog = new Dogs(dogs[randomNumber()])
+        dog = new Dog(dogs[randomNumber()])
         render()
         document.getElementById("modal").innerHTML = ``
-    },1500)
+    }, 1000)
 }
 
