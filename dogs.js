@@ -17,21 +17,27 @@ class Dog {
     likedDog(dogId) {
         dogs.forEach( dog => {
             if(dog.name === dogId.name) {
-                console.log("igen")
                 dog.hasBeenLiked = true
             }
         })
     }
+    swipedDog(dogId) {
+        dogs.forEach( dog => {
+            if(dog.name === dogId.name) {
+                dog.hasBeenSwiped = true
+            }
+        })
+    }
+
     getNewDogArray() {
         let newDogArray = []
         
         dogs.forEach( dog => {
-            if(!dog.hasBeenLiked) {
+            if(!dog.hasBeenLiked && !dog.hasBeenSwiped) {
                 newDogArray.push(dog)
             }
         })
         return newDogArray        
-    }
-    
+    }    
 }
 export default Dog

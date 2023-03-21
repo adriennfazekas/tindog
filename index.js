@@ -6,7 +6,6 @@ let dog = new Dog(dogs[randomNumber(dogs.length)])
 
 const likeBtn = document.getElementById("like-btn")
 const rejectBtn = document.getElementById("reject-btn")
-const buttonEl = document.getElementById("buttons")
 
 function render() {
     if(Object.keys(dog).length > 0) {
@@ -14,18 +13,19 @@ function render() {
     } else {
         document.getElementById("container").innerHTML = ` 
             <div>There are no more dog</div> `
-    }
-    
+    }    
 }
 render()
 
 document.addEventListener("click", function(e) {
     if(e.target.id === "like-btn") {
+        dog.likedDog(dog)
         targetButton("like")
     }
     else if(e.target.id === "reject-btn") {
+        dog.swipedDog(dog)
         targetButton("nope")
-    } else { console.log("nope")}
+    }
 })
 
 function targetButton(buttonMode) {
@@ -34,8 +34,6 @@ function targetButton(buttonMode) {
     `
     likeBtn.disabled = true
     rejectBtn.disabled = true    
-
-    dog.likedDog(dog)
 
     setTimeout( () => {
         likeBtn.disabled = false
@@ -50,6 +48,5 @@ function targetButton(buttonMode) {
 
 function getNewDog() {
     const dogArray = dog.getNewDogArray()
-    dog = new Dog(dogArray[randomNumber(dogArray.length)])  
-    console.log(dogArray)  
+    dog = new Dog(dogArray[randomNumber(dogArray.length)])    
 }
