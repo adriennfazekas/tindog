@@ -9,17 +9,11 @@ const rejectBtn = document.getElementById("reject-btn")
 const buttonEl = document.getElementById("buttons")
 
 function render() {
-    console.log(dog)
-    console.log(Object.keys(dog))
-
     if(Object.keys(dog).length > 0) {
         document.getElementById("profile-field").innerHTML = dog.getDogHtml()
     } else {
-        console.log("ennyi")
-        document.getElementById("profile-field").innerHTML = ` 
-            <div>There are no more dog</div>
-        `
-        buttonEl.style.display = none
+        document.getElementById("container").innerHTML = ` 
+            <div>There are no more dog</div> `
     }
     
 }
