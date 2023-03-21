@@ -1,3 +1,5 @@
+import { dogs } from "./data.js"
+
 class Dog {
     constructor(data) {
         Object.assign(this, data)
@@ -12,5 +14,24 @@ class Dog {
                 </div>
             `
     }
+    likedDog(dogId) {
+        dogs.forEach( dog => {
+            if(dog.name === dogId.name) {
+                console.log("igen")
+                dog.hasBeenLiked = true
+            }
+        })
+    }
+    getNewDogArray() {
+        let newDogArray = []
+        
+        dogs.forEach( dog => {
+            if(!dog.hasBeenLiked) {
+                newDogArray.push(dog)
+            }
+        })
+        return newDogArray        
+    }
+    
 }
 export default Dog

@@ -34,14 +34,14 @@ body {
     left: 2em;
 }
 .profile-data {
-    color: #F8F8F8;
+    color: #ffffff;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 0.2em;
 }
 .profile-bio {
-    color: #B7B7B7;
+    color: rgb(39, 222, 228);
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 1rem;

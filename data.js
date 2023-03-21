@@ -31,7 +31,7 @@ export const dogs = [
         hasBeenLiked: false
     },
     {
-        name: "Will",
+        name: "Momo",
         avatar: "images/dog-will.jpg",
         age: 27,
         bio: "Love the speed!!",

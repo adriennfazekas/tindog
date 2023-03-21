@@ -1,4 +1,7 @@
 
-export const randomNumber = () => {
-    return Math.floor(Math.random() * 5)
+export const randomNumber = (length) => {
+    return Math.floor(Math.random() * length)
 }
+
+
+
