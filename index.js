@@ -12,7 +12,7 @@ function render() {
         document.getElementById("profile-field").innerHTML = dog.getDogHtml()
     } else {
         document.getElementById("container").innerHTML = ` 
-            <div>There are no more dog</div> `
+            <div class="dogless">No more dog</div> `
     }    
 }
 render()

@@ -7,7 +7,7 @@ body {
 }
 .container {
     position: relative;
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -45,6 +45,12 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 1rem;
+}
+.dogless {
+    font-family: 'Poppins';
+    font-size: large;
+    text-align: center;
+    padding-top: 3em;
 }
 
 /* BUTTONS */
